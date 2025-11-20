@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sơ Yếu Lý Lịch</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #2c2c2c;
+        color: #f1f1f1;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .header {
+        text-align: center;
+        padding-bottom: 20px;
+      }
+
+      .header h1 {
+        color: #ffcc00;
+        margin: 5px 0 15px 0;
+      }
+
+      .profile-pic {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #ffcc00;
+      }
+
+      .summary {
+        max-width: 600px;
+        margin: 10px auto 30px auto;
+        font-size: 0.9em;
+        line-height: 1.4;
+        padding: 0 10px;
+      }
+
+      .grid-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px 40px;
+        padding-top: 20px;
+      }
+
+      .section {
+        padding: 15px 0;
+      }
+
+      h2 {
+        color: #ffcc00;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding-bottom: 5px;
+        margin-top: 0;
+        font-size: 1.2em;
+      }
+
+      .item strong {
+        display: block;
+        color: #ddd;
+        font-size: 1em;
+        margin-top: 3px;
+      }
+
+      .year {
+        color: #ffcc00;
+        font-weight: bold;
+        display: block;
+        font-size: 0.9em;
+        margin-bottom: 2px;
+      }
+
+      .contact-item {
+        margin-bottom: 10px;
+        font-size: 0.9em;
+      }
+
+      .skill-tag {
+        display: inline-block;
+        background-color: #ffcc00;
+        color: #2c2c2c;
+        padding: 8px 15px;
+        border-radius: 20px;
+        font-weight: bold;
+        margin-right: 10px;
+        margin-top: 10px;
+        font-size: 0.9em;
+      }
+
+      .diagram-placeholder {
+        height: 120px;
+        background-color: #444;
+        margin: 20px auto;
+        width: 100%;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.8em;
+        color: #ffcc00;
+      }
+
+      .education-area {
+        grid-column: 1 / -1;
+        text-align: center;
+        border-top: 1px solid #444;
+        margin-top: 20px;
+        padding-top: 20px;
+      }
+
+      .education-area .item {
+        display: inline-block;
+        margin: 0 10px;
+        vertical-align: top;
+        width: 45%;
+        border-left: 3px solid #ffcc00;
+        padding-left: 15px;
+        box-sizing: border-box;
+      }
+
+      .column {
+        min-height: 200px;
+      }
+
+      .diagram-area {
+        grid-column: 2;
+      }
+
+      .right-column {
+        grid-column: 3;
+      }
+
+      .left-column {
+        grid-column: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img
+          src="https://via.placehoder.com/150/ffcc00/2c2c2c?text=DV"
+          alt="ảnh đại diện"
+          class="profile-pic"
+        />
+        <h1>Huỳnh Hải Đăng</h1>
+        <p class="summary">
+          Xin chào, tôi là **Đăng**. Hiện tại là sinh viên **Công nghệ Thông
+          tin** tại Trường Đại học Hùng Vương.
+        </p>
+      </div>
+
+      <div class="grid-layout">
+        <div class="column left-column">
+          <section class="section">
+            <h2>Kinh nghiệm làm việc</h2>
+            <div class="item">
+              <span class="year">2022</span>
+              <strong>Phát triển Fullstack</strong>
+              <p>
+                Trường THPT Hàm Thuận Bắc - Khởi đầu với lập trình **FullStack**
+                (Tự học/Dự án cá nhân).
+              </p>
+            </div>
+            <div class="item">
+              <span class="year">2023 - Hiện tại</span>
+              <strong>Sinh viên kiêm Trợ lý Thiết kế Nội dung</strong>
+              <p>
+                Trường Đại học Hùng Vương - Hỗ trợ thiết kế nội dung **số/đồ
+                họa** cho các hoạt động của trường.
+              </p>
+            </div>
+          </section>
+
+          <section class="section">
+            <h2>Ngôn ngữ</h2>
+            <p>**Tiếng Anh:** Trung bình</p>
+            <p>**Tiếng Nhật:** Cơ bản</p>
+            <p>**Tiếng Việt:** Siêu hạng (Bản ngữ)</p>
+          </section>
+        </div>
+
+        <div class="diagram-area">
+          <div class="diagram-placeholder">Sơ đồ/Các thiết bị công nghệ</div>
+        </div>
+
+        <div class="column right-column">
+          <section class="section">
+            <h2>Liên hệ</h2>
+            <p class="contact-item">haidang23htb@gmail.com</p>
+            <p class="contact-item">0379927031</p>
+            <p class="contact-item">YouTube (URL kênh)</p>
+            <p class="contact-item">dhv.edu.vn (URL trang web)</p>
+          </section>
+
+          <section class="section">
+            <h2>Kỹ năng</h2>
+            <div class="skill-tag">HTML</div>
+            <div class="skill-tag">CSS</div>
+            <div class="skill-tag">JavaScript</div>
+            <div class="skill-tag">Thiết kế đồ họa</div>
+          </section>
+        </div>
+
+        <div class="education-area">
+          <h2>Giáo dục</h2>
+          <div class="item">
+            <span class="year">2022</span> <strong>Hoàn thành Cấp 3</strong>
+            <p>Trường THPT Hàm Thuận Bắc</p>
+          </div>
+          <div class="item">
+            <span class="year">2025 (Dự kiến)</span>
+            <strong>Sinh viên ngành CNTT</strong>
+            <p>Trường Đại học Hùng Vương</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
