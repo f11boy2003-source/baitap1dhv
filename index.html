@@ -2,227 +2,213 @@
 <html lang="vi">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sơ Yếu Lý Lịch</title>
+    <title>Huỳnh Hải Đăng - CV</title>
+    <link href="" rel="stylesheet" />
+    <script crossorigin="anonymous"></script>
+
     <style>
       body {
-        font-family: Arial, sans-serif;
-        background-color: #2c2c2c;
-        color: #f1f1f1;
         margin: 0;
-        padding: 20px;
+        padding: 0;
+        background: #262626;
+        font-family: "Montserrat", sans-serif;
+        color: #fff;
       }
 
       .container {
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 20px;
+        width: 90%;
+        margin: auto;
+        padding: 40px 0;
       }
 
-      .header {
+      .title {
         text-align: center;
-        padding-bottom: 20px;
+        font-size: 46px;
+        margin-bottom: 30px;
+        font-weight: 700;
       }
 
-      .header h1 {
-        color: #ffcc00;
-        margin: 5px 0 15px 0;
+      .top-section {
+        display: flex;
+        justify-content: space-between;
       }
 
-      .profile-pic {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 3px solid #ffcc00;
+      .experience h2 {
+        color: #f7b733;
+        margin-bottom: 20px;
+        font-size: 26px;
       }
 
-      .summary {
-        max-width: 600px;
-        margin: 10px auto 30px auto;
-        font-size: 0.9em;
-        line-height: 1.4;
-        padding: 0 10px;
-      }
-
-      .grid-layout {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 20px 40px;
-        padding-top: 20px;
-      }
-
-      .section {
-        padding: 15px 0;
-      }
-
-      h2 {
-        color: #ffcc00;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        padding-bottom: 5px;
-        margin-top: 0;
-        font-size: 1.2em;
-      }
-
-      .item strong {
-        display: block;
-        color: #ddd;
-        font-size: 1em;
-        margin-top: 3px;
+      .exp-item {
+        display: flex;
+        margin-bottom: 25px;
       }
 
       .year {
-        color: #ffcc00;
-        font-weight: bold;
-        display: block;
-        font-size: 0.9em;
-        margin-bottom: 2px;
-      }
-
-      .contact-item {
-        margin-bottom: 10px;
-        font-size: 0.9em;
-      }
-
-      .skill-tag {
-        display: inline-block;
-        background-color: #ffcc00;
-        color: #2c2c2c;
-        padding: 8px 15px;
-        border-radius: 20px;
-        font-weight: bold;
-        margin-right: 10px;
-        margin-top: 10px;
-        font-size: 0.9em;
-      }
-
-      .diagram-placeholder {
-        height: 120px;
-        background-color: #444;
-        margin: 20px auto;
-        width: 100%;
+        background: #f7b733;
+        padding: 5px 15px;
         border-radius: 5px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 0.8em;
-        color: #ffcc00;
+        font-weight: 700;
+        margin-right: 15px;
       }
 
-      .education-area {
-        grid-column: 1 / -1;
+      .center-block {
+        width: 35%;
         text-align: center;
-        border-top: 1px solid #444;
-        margin-top: 20px;
-        padding-top: 20px;
       }
 
-      .education-area .item {
-        display: inline-block;
-        margin: 0 10px;
-        vertical-align: top;
-        width: 45%;
-        border-left: 3px solid #ffcc00;
-        padding-left: 15px;
-        box-sizing: border-box;
+      .avatar-wrapper {
+        width: 210px;
+        height: 210px;
+        margin: auto;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 5px solid #fff;
       }
 
-      .column {
-        min-height: 200px;
+      .avatar {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
 
-      .diagram-area {
-        grid-column: 2;
+      .intro {
+        margin-top: 15px;
+        font-size: 15px;
+        line-height: 1.5;
       }
 
-      .right-column {
-        grid-column: 3;
+      .contact h2 {
+        color: #f7b733;
+        font-size: 26px;
       }
 
-      .left-column {
-        grid-column: 1;
+      .contact p {
+        margin: 10px 0;
+        font-size: 15px;
+      }
+
+      .bottom-section {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+      }
+
+      .lang h2,
+      .education h2,
+      .skills h2 {
+        color: #f7b733;
+      }
+
+      .edu-item {
+        display: flex;
+        margin-bottom: 20px;
+      }
+
+      .skill-circle {
+        width: 95px;
+        height: 95px;
+        border: 4px solid #f7b733;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px auto;
+        font-size: 20px;
+        font-weight: 700;
+        color: #f7b733;
       }
     </style>
   </head>
+
   <body>
     <div class="container">
-      <div class="header">
-        <img
-          src="https://via.placehoder.com/150/ffcc00/2c2c2c?text=DV"
-          alt="ảnh đại diện"
-          class="profile-pic"
-        />
-        <h1>Huỳnh Hải Đăng</h1>
-        <p class="summary">
-          Xin chào, tôi là **Đăng**. Hiện tại là sinh viên **Công nghệ Thông
-          tin** tại Trường Đại học Hùng Vương.
-        </p>
+      <h1 class="title">Huỳnh Hải Đăng</h1>
+
+      <div class="top-section">
+        <div class="experience">
+          <h2>Kinh nghiệm<br />Làm việc</h2>
+
+          <div class="exp-item">
+            <div class="year">2022</div>
+            <div>
+              <h3>Trường THPT Hàm Thuận Bắc</h3>
+              <strong>Phát triển FullStack</strong>
+              <p>Đáp ứng mọi yêu cầu mọi người<br />Kiểm thử ứng dụng</p>
+            </div>
+          </div>
+
+          <div class="exp-item">
+            <div class="year">2025</div>
+            <div>
+              <h3>Trường Đại học Hùng Vương Tp.HCM</h3>
+              <strong>Sinh viên</strong>
+              <p>
+                Học kiến thức cơ bản, viết ứng dụng,<br />thiết kế và kiểm thử
+                websites
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="center-block">
+          <div class="avatar-wrapper">
+            <img src="img/faker.webp" class="avatar" />
+          </div>
+
+          <p class="intro">
+            Xin chào. Tôi là Huỳnh Hải Đăng. Tôi hiện là sinh viên, kiểm thử
+            phần mềm và sáng tạo nội dung. Tôi luôn cố gắng mỗi ngày để tạo ra
+            giá trị tốt hơn cho bản thân và mọi người.
+          </p>
+        </div>
+
+        <div class="contact">
+          <h2>Liên hệ</h2>
+
+          <p><i class="fas fa-map-marker-alt"></i> 736 Nguyễn Trãi</p>
+          <p><i class="fas fa-envelope"></i> *****@dhv.edu.vn</p>
+          <p><i class="fas fa-phone"></i> +84 781 ****</p>
+          <p><i class="fab fa-instagram"></i> dhv.edu.vn</p>
+          <p><i class="fab fa-youtube"></i> youtube</p>
+          <p><i class="fas fa-globe"></i> dhv.edu.vn</p>
+        </div>
       </div>
 
-      <div class="grid-layout">
-        <div class="column left-column">
-          <section class="section">
-            <h2>Kinh nghiệm làm việc</h2>
-            <div class="item">
-              <span class="year">2022</span>
-              <strong>Phát triển Fullstack</strong>
-              <p>
-                Trường THPT Hàm Thuận Bắc - Khởi đầu với lập trình **FullStack**
-                (Tự học/Dự án cá nhân).
-              </p>
-            </div>
-            <div class="item">
-              <span class="year">2023 - Hiện tại</span>
-              <strong>Sinh viên kiêm Trợ lý Thiết kế Nội dung</strong>
-              <p>
-                Trường Đại học Hùng Vương - Hỗ trợ thiết kế nội dung **số/đồ
-                họa** cho các hoạt động của trường.
-              </p>
-            </div>
-          </section>
-
-          <section class="section">
-            <h2>Ngôn ngữ</h2>
-            <p>**Tiếng Anh:** Trung bình</p>
-            <p>**Tiếng Nhật:** Cơ bản</p>
-            <p>**Tiếng Việt:** Siêu hạng (Bản ngữ)</p>
-          </section>
+      <div class="bottom-section">
+        <div class="lang">
+          <h2>Ngôn ngữ</h2>
+          <p><strong>Tiếng Anh:</strong> Trung bình</p>
+          <p><strong>Tiếng Nhật:</strong> Không biết</p>
+          <p><strong>Tiếng Việt:</strong> Siêu hạng</p>
         </div>
 
-        <div class="diagram-area">
-          <div class="diagram-placeholder">Sơ đồ/Các thiết bị công nghệ</div>
-        </div>
-
-        <div class="column right-column">
-          <section class="section">
-            <h2>Liên hệ</h2>
-            <p class="contact-item">haidang23htb@gmail.com</p>
-            <p class="contact-item">0379927031</p>
-            <p class="contact-item">YouTube (URL kênh)</p>
-            <p class="contact-item">dhv.edu.vn (URL trang web)</p>
-          </section>
-
-          <section class="section">
-            <h2>Kỹ năng</h2>
-            <div class="skill-tag">HTML</div>
-            <div class="skill-tag">CSS</div>
-            <div class="skill-tag">JavaScript</div>
-            <div class="skill-tag">Thiết kế đồ họa</div>
-          </section>
-        </div>
-
-        <div class="education-area">
+        <div class="education">
           <h2>Giáo dục</h2>
-          <div class="item">
-            <span class="year">2022</span> <strong>Hoàn thành Cấp 3</strong>
-            <p>Trường THPT Hàm Thuận Bắc</p>
+
+          <div class="edu-item">
+            <div class="year">2022</div>
+            <div>
+              <h3>Trường THPT Hàm Thuận Bắc</h3>
+              <strong>Học sinh ngoan</strong>
+              <p>Học tập tại trường</p>
+            </div>
           </div>
-          <div class="item">
-            <span class="year">2025 (Dự kiến)</span>
-            <strong>Sinh viên ngành CNTT</strong>
-            <p>Trường Đại học Hùng Vương</p>
+
+          <div class="edu-item">
+            <div class="year">2025</div>
+            <div>
+              <h3>Trường Đại học Hùng Vương Tp.HCM</h3>
+              <strong>Sinh viên ngành CNTT</strong>
+              <p>Chuyên ngành CNTT và Ứng dụng AI</p>
+            </div>
           </div>
+        </div>
+
+        <div class="skills">
+          <h2>Kỹ Năng</h2>
+          <div class="skill-circle">HTML</div>
+          <div class="skill-circle">CSS</div>
         </div>
       </div>
     </div>
